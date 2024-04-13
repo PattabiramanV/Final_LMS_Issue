@@ -168,7 +168,9 @@ async function html_quiz_btn()
       if (Html_Complete_Percentage === 100) 
       {
         localStorage.setItem('selectedQuiz', 'HTML_Overall_Quiz');
+        
         localStorage.setItem('certificate_get', 'HTML_Overall_Quiz');
+
         window.location.href = './OverallQuiz.html';
         document.querySelector(".html_lock").style.display = "none"; // Use querySelector or access the first element of the collection
       } 
@@ -221,7 +223,10 @@ async function css_quiz_btn()
       if (Css_Complete_Percentage === 100) 
       {
         localStorage.setItem('selectedQuiz', 'CSS_Overall_Quiz');
+
+        
         localStorage.setItem('certificate_get', 'CSS_Overall_Quiz');
+        
         window.location.href = './OverallQuiz.html';
         document.querySelector(".css_lock").style.display = "none"; // Use querySelector or access the first element of the collection
       } 
@@ -272,7 +277,10 @@ async function js_quiz_btn()
       if (Javascript_Complete_Percentage === 100) 
       {
         localStorage.setItem('selectedQuiz', 'JavaScript_Overall_Quiz');
+        
+        
         localStorage.setItem('certificate_get', 'JavaScript_Overall_Quiz');
+
         window.location.href = './OverallQuiz.html';
         document.querySelector(".js_lock").style.display = "none"; // Use querySelector or access the first element of the collection
       } 

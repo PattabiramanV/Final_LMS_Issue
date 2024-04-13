@@ -328,9 +328,11 @@ function validate_quiz_fun(){
     main_quiz_div.classList.add("bootm_content_quiz_classlist");
 let all_P_tag=document.querySelectorAll(".result_show_content");
 
-    all_score_content[0].innerHTML=Quiz_object.length;
-    all_score_content[1].innerHTML=total_mark;
-    all_score_content[2].innerHTML=Math.floor(total_mark/Quiz_object.length*100);
+    all_score_content[0].innerHTML = Quiz_object.length;
+
+    all_score_content[1].innerHTML = total_mark;
+    
+    all_score_content[2].innerHTML = Math.floor(total_mark/Quiz_object.length*100);
 
   if (total_mark != Quiz_object.length) {
     next_module_btn.style.display = 'none';

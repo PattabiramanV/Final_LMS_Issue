@@ -243,9 +243,10 @@ otp_btn.addEventListener("click", verified)
   setTimeout(() => {
     window.location.href = './login.html';
 }, 1000);
-localStorage.setItem('userdetails',JSON.stringify(userData))
-let storedlocaldata=localStorage.getItem('userData')
-let storedparseddata=JSON.parse(storedlocaldata)
+
+localStorage.setItem('userdetails',JSON.stringify(userData));
+// let storedlocaldata=localStorage.getItem('userData')
+// let storedparseddata=JSON.parse(storedlocaldata)
      
   }
   else{

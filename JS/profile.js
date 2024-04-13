@@ -195,7 +195,7 @@ window.addEventListener("load", async () => {
 
   try {
     const docSnap = await getDoc(docRef);
-    if (docSnap.exists()) {
+    if (docSnap) {
       const userData = docSnap.data();
       inputName.value = userData.fullName;
       inputgitUsername.value = userData.gitUsername;

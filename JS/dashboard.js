@@ -1,7 +1,7 @@
 "use strict"
 //------------------------------- fire_base -----------------------------------
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
-import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { getFirestore, doc,  getDoc  } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 
 //------------ Your web app's Firebase configuration -------------------
 const firebaseConfig = {
