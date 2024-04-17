@@ -152,7 +152,7 @@ const darkLight = document.querySelector("#darkLight");
 let signcontrols = document.querySelector(".login_parent");
 
 // Check if userdetails exist in localStorage
-if (localStorage.getItem("Userdetails")) {
+if (localStorage.getItem("userdetails")) {
   signcontrols.style.display = "none";
   profile.style.display = "block";
   darkLight.style.display = "block";
