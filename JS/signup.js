@@ -286,12 +286,15 @@ let conEyeIcon = document.querySelector("#conIcon")
 // -----------already have an account login----------
 let exist_login = document.getElementById("underline_btn");
 
-exist_login.addEventListener("click", login_page);
+exist_login.addEventListener("click",()=>{
 
-function login_page() {
-    document.getElementById('loadingOverlay').style.visibility = 'visible';
-    setTimeout(() => {
-        window.location.href = './login.html';
-    }, 2000);
-}
+  let loader=document.querySelector("#loadingOverlay");
+  loader.style.visibility='visible';
+
+  setTimeout(()=>{
+    window.location.href='login.html';
+
+  },1000);
+  
+});
 

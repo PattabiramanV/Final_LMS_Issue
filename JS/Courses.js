@@ -187,34 +187,29 @@ try {
   const languages = ["Html", "Css", "Javascript", "Mysql", "Php"];
 
   languages.forEach((language) => {
+
     const userLearningData = userData.data()[`${language}_Complete_Module`];
-    console.log(`${language} Complete Module:`, userLearningData);
+  
+language=language.toLowerCase();
 
     if (userLearningData >= 1) {
       const completedCourseContainer = document.createElement("div");
       completedCourseContainer.classList.add("Progress_bar");
-      completedCourseContainer.innerHTML = `
-        <div class="progress_language">
-          <img src="./Assests/${language.toLowerCase()}.webp" alt="" class="enroll_img">
-        </div>
-        <hr>
-        <div class="progress_status">
+      completedCourseContainer.innerHTML=`
+      <div class=progress_language> <img src="./Assests/${language}.webp" class=enroll_img></div>
+      <hr>
+      <div class="progress_status">
           <p class="enroll_language">${language}</p>
           <div class="percentage">
             <p class="progress">In Progress</p>
-            <span class="percentage_cal"></span>
+            <span class="percentage_cal">0%</span>
           </div>
         </div>
-      `;
-
+      `
       // Append the completed course container to the DOM
       Progressbarconatiner.style.display = "block";
-      const completedCoursesContainer = document.querySelector(
-        ".progressing_bar .Progress_container"
-      );
-      completedCoursesContainer.appendChild(completedCourseContainer);
-      let listcourse = document.querySelector(".ListCourses");
-      listcourse.style.marginTop = "0px";
+      listcourse.style.marginTop = "0px";  
+      progress_container.append(completedCourseContainer);  
     } else {
       console.log(`User's ${language}_Complete_Module is not greater than 1`);
     }
@@ -288,3 +283,5 @@ window.addEventListener("load", async function () {
     alert("Error getting user image. Please try again.");
   }
 });
+
+
