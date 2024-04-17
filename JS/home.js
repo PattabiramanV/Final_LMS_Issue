@@ -148,23 +148,17 @@ let find_language_unlock_module=get_data.data()[find_language+'_unlock_total_mod
 
 // -------------loginvalidate----------
 
-let signcontrols = document.querySelector(".login_parent");
 const darkLight = document.querySelector("#darkLight");
+let signcontrols = document.querySelector(".login_parent");
 
 // Check if userdetails exist in localStorage
-if(localStorage.getItem('userdetails')){
-    // User details exist
-    signcontrols.style.display = 'none'; 
-    profile.style.display = 'block'; 
-    darkLight.style.display='block'
-
-
+if (localStorage.getItem("Userdetails")) {
+  signcontrols.style.display = "none";
+  profile.style.display = "block";
+  darkLight.style.display = "block";
 } else {
-
-    profile.style.display = 'none'; 
+  profile.style.display = "none";
 }
-
-
 
 
 // Profile shown

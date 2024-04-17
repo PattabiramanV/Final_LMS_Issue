@@ -241,14 +241,14 @@ async function initializeQuiz() {
   
   function displayQuestion() {
     let questionData = allQuizData[currentQuestion];
-    let questionId = questionData.questionId;
+    // let questionId = questionData.questionId;
 
     let question_Div = document.createElement("div");
     question_Div.className = "question_div";
 
     let questionElement = document.createElement("p");
     questionElement.className = "question";
-    questionElement.innerHTML = `${questionId} . ${questionData.question}`;
+    questionElement.innerHTML = `${questionData.questionId} . ${questionData.question}`;
     // questionElement.innerHTML = `${questionId} . ${questionData.question.replace(
     //   /[""]/g,
     //   ""
